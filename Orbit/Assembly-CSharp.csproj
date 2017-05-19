@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E90AA9E5-F5D2-8173-EB29-5643754242A0}</ProjectGuid>
+    <ProjectGuid>{E02A9716-8E29-62F4-AF83-23366D0D0170}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,6 +67,9 @@
      <Compile Include="Assets\Scripts\Tools\Orbitor.cs" />
      <Compile Include="Assets\Scripts\UIRelative\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\UIRelative\SignedPosition.cs" />
+     <Compile Include="Assets\Scripts\UIRelative\TextAnimation.cs" />
+     <Compile Include="Assets\Scripts\UIRelative\UIEarthRotation.cs" />
+     <Compile Include="Assets\Scripts\UIRelative\UITriangleRotate.cs" />
      <Compile Include="Assets\Scripts\UIRelative\VelocityRelativeColor.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
