@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 1901299581}
   - component: {fileID: 1901299580}
   - component: {fileID: 1901299579}
+  - component: {fileID: 1901299578}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -167,6 +168,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!45 &1901299578
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1901299577}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 929eb871a7e855e4491af2f8bcac90c1, type: 2}
 --- !u!124 &1901299579
 Behaviour:
   m_ObjectHideFlags: 0
