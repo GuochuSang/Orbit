@@ -43,8 +43,9 @@ public class SignedPosition : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.W) || Input.GetMouseButtonDown (2)) {
 			MousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition) + new Vector3 (0, 0, 100);
 			hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero); 
-			if(hit.collider==null)
+			if (hit.collider == null) {
 				Inputer.SetActive (true);
+			}
 			else
 				AddPoint ();
 		}

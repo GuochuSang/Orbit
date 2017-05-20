@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Celestial Body\BlackHole.cs" />
      <Compile Include="Assets\Scripts\Celestial Body\CelestialBody.cs" />
      <Compile Include="Assets\Scripts\Celestial Body\Moon\Moon.cs" />
+     <Compile Include="Assets\Scripts\Celestial Body\PerlinStar.cs" />
      <Compile Include="Assets\Scripts\Celestial Body\Planet.cs" />
      <Compile Include="Assets\Scripts\Celestial Body\SpaceShip.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
@@ -71,6 +72,7 @@
      <Compile Include="Assets\Scripts\UIRelative\UIEarthRotation.cs" />
      <Compile Include="Assets\Scripts\UIRelative\UITriangleRotate.cs" />
      <Compile Include="Assets\Scripts\UIRelative\VelocityRelativeColor.cs" />
+     <Compile Include="Assets\sceneLoderOnAnimator.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
