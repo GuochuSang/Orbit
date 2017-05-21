@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+
 public class Enums{
+	
 	public enum OrbitDirection
 	{
 		clockwise=0,
 		anticlockwise=1,
 	}
+
 	public enum MassScaleController
 	{
 		Mass2Scale=0,
 		Scale2Mass=1,
 	}
 }
+
 public class CelestialBody : MonoBehaviour {
 
     [Header("Gravity Controller")]
@@ -97,7 +101,10 @@ public class CelestialBody : MonoBehaviour {
 	#endregion
 
 	[HideInInspector]
+	#region GetName
 	public bool getNamed;
+	#endregion
+
 	public string GetName()
 	{
 		if (orbitTarget != null && orbit&&!getNamed)

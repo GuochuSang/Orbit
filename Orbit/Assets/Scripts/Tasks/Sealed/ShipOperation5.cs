@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ShipOperation5 : Operation {
+	
+	#region Declare
 	public GameObject GM,ship,sun;
 	private bool step1, step2;
 	private Orbitor orbitor;
+	#endregion
+
 	public override bool OperationCheck ()
 	{
 		if (Vector3.Distance (ship.transform.position, sun.transform.position) < 100f)

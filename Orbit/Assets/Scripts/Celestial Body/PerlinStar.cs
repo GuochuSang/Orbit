@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))] 
 public class PerlinStar:CelestialBody {
+	
+	#region Declare
 		public int numberOfPoints = 10; 
 		private float[] delta;
 		public float xSeed, ySeed;
@@ -14,16 +16,19 @@ public class PerlinStar:CelestialBody {
 		private int[] triangles; 
 		public float radius=1f;
 		public PolygonCollider2D p2d;
+	#endregion
+
 	public override void Start () { 
 		base.Start ();
-			GetComponent<MeshFilter>().mesh = mesh = new Mesh(); 
-			mesh.name = "Star Mesh"; 
-			uv = new Vector2[numberOfPoints + 1];
-			vertices = new Vector3[numberOfPoints + 1];
-			delta = new float[numberOfPoints + 1];
-			points = new Vector2[numberOfPoints];
-			triangles = new int[numberOfPoints * 3];
-		} 
+		GetComponent<MeshFilter> ().mesh = mesh = new Mesh (); 
+		mesh.name = "Star Mesh"; 
+		uv = new Vector2[numberOfPoints + 1];
+		vertices = new Vector3[numberOfPoints + 1];
+		delta = new float[numberOfPoints + 1];
+		points = new Vector2[numberOfPoints];
+		triangles = new int[numberOfPoints * 3];
+	}
+
 	public override void Update()
 		{
 		base.Update ();
@@ -49,4 +54,5 @@ public class PerlinStar:CelestialBody {
 			ySeed += 0.01f;
 			p2d.SetPath (0,points);
 		}
+
 }
